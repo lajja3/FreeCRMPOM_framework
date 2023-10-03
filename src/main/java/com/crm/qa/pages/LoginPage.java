@@ -15,10 +15,10 @@ import com.crm.qa.base.TestBase;
 public class LoginPage extends TestBase{
 	
 	//Page Factory - OR(object repository) is a collection of all the web elements:
-	@FindBy(name="username1")
+	@FindBy(name="username")
 	WebElement username;
 	
-	@FindBy(name="password1")
+	@FindBy(name="password")
 	WebElement password;
 	
 	@FindBy(xpath="//input[@type='submit']")
