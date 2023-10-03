@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FREE CRM Application Test Automation Test Suite">
+
+<!--STEP 9 - c) after u add the listener class u have to add the listener here in testng.xml
+            for extent report gererator-->
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" /> <!--dont write ExtentReporterNG.java-->
+	</listeners>
+	
+	<test name="Free CRM App Test Cases">
+		<classes>
+			<class name="com.crm.qa.testcases.LoginPageTest"></class>
+			<class name="com.crm.qa.testcases.HomePageTest"></class>
+			<class name="com.crm.qa.testcases.ContactsPageTest"></class>
+		</classes>
+	</test>
+</suite>
+
+<!--STEP 5 - we are creating regression testing file -->
+
+<!--Notes:-
+-> This xml file is use to run all the tests, to avoid running each classes again and again after selecting them from the package
+1. You can give any suite name, test name 
+2. Classes will be executed according to the sequence here loginpage,homepage,contactspage test
+3. to comment in this file select the texts and then right click -> Source -> AddBlockComment -->
